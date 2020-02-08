@@ -1,0 +1,25 @@
+create database qq;
+use qq;
+create table login
+(
+  id int primary Key auto_increment,
+  username varchar(20),
+  password varchar(20)
+);
+insert into login(username,password) values('aaa','111');
+insert into login(username,password) values('bbb','111');
+create table products
+(
+  id int primary key,
+  name varchar(100) not null,
+  price double (8,2),
+  gift int,
+  down char(1),
+  img varchar(20),
+  info varchar(100)
+);
+insert into products values(1,'欧普照明led台灯(调光护眼灯 )',139.00,1,'y','img/a.jpg','');
+insert into products values(2,'心相印抽纸 婴用型3层120抽面巾纸*18包',66.90,1,'y','img/b.jpg','');
+insert into products values(3,'心相印抽纸 红月系列3层130抽面巾纸*24包',59.90,1,'y','img/c.jpg','');
+insert into products values(4,'欧普照明led台灯护眼灯 可调光调色 银色',199.00,1,'y','img/d.jpg','');
+insert into products values(5,'乐视TV(Letv)S50Air全配版 50英寸 2D智能电视',2999.00,1,'y','img/e.jpg','');
