@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+  <constant name="struts.i18n.encoding" value="gbk"></constant>
+  <package name="com.my.action" extends="json-default" namespace="/">
+     <global-results>
+         <result name="booklist">/booklist.jsp</result>
+         <result name="readercategorylist">/readercategorylist.jsp</result>
+     </global-results>
+  <action name="userinfo" class="com.my.action.UserinfoAction">
+    <result name="main">/main.jsp</result>
+    <result name="error">/index.jsp</result>
+    <result name="userinfolist">/userinfolist.jsp</result>
+    <result name="userinfoadd">/userinfoadd.jsp</result>
+    <result name="userinfoupdate">/userinfoupdate.jsp</result>
+  </action>
+  <action name="bookcategory" class="com.my.action.BookcategoryAction">
+       <result name="bookcategorylist">/bookcategorylist.jsp</result>
+       <result name="bookcategoryadd">/bookcategoryadd.jsp</result>
+       <result name="bookcategoryupdate">/bookcategoryupdate.jsp</result>
+  </action>
+  <action name="book" class="com.my.action.BookAction">
+       <result name="booklist">/booklist.jsp</result>
+       <result name="bookadd">/bookadd.jsp</result>
+       <result name="bookshowone">/bookshowone.jsp</result>
+       <result name="bookupdate">/bookupdate.jsp</result>
+  </action>
+  <action name="page" class="com.my.action.PageAction">
+  </action>
+  <action name="readercategory" class="com.my.action.ReadercategoryAction">
+  </action>
+  <action name="reader" class="com.my.action.ReaderAction">
+       <result name="readerlist">/readerlist.jsp</result>
+  </action>
+  <action name="borrow" class="com.my.action.BorrowAction">
+       <result name="borrowlist">/borrowlist.jsp</result>
+  </action>
+  <action name="readerajax" class="com.my.action.ReaderAjaxAction">
+       <result type="json" name="jsonresult"></result>
+  </action>
+  <action name="bookajax" class="com.my.action.BookAjaxAction">
+       <result type="json" name="jsonresult"></result>
+  </action>
+  </package>
+</struts>    

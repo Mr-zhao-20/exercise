@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Bookmis"
+  id="myeclipse.1537154036422"
+  context-root="/book"
+  j2ee-spec="5.0"
+  archive="Bookmis.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
